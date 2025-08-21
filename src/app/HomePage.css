@@ -1,0 +1,84 @@
+.home-page {
+    position: fixed; /* Remove fixed so it scrolls naturally */
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+    background-image: url('/loginbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    display: flex;
+  }
+  .company-logo{
+    width: 40px;
+    height: 40px;
+    margin: 20px auto; /* Center the logo */
+    border-radius: 100%; /* Makes it circular if square image */
+   
+    
+  }
+  .navbar{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50;
+    display: flex;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5); /* White with transparency */
+    backdrop-filter: blur(20px); /* Blur background */
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between; /* Pushes left to far left, right to far right */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Add some padding for aesthetics */
+    color: white;
+    font-family: 'Poppins', -apple-system, Roboto, Helvetica, sans-serif;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: 550; /* Adjust font weight as needed */
+  }
+  
+  
+  .center-nav-links,
+  .right-nav-links {
+    display: flex;
+    gap: 50px; /* spacing between links in each section */
+    
+  }
+  .left-nav-links{
+    display: flex;
+    gap: 10px; /* spacing between links in each section */
+    font-weight: 500 ;
+    align-items:center ;
+    
+  }
+  
+  
+  .center-nav-links a:hover,
+  .right-nav-links a:hover {
+    color:#E3963F
+    
+  }
+  
+  
+  /* Make sure center stays centered regardless of left/right sizes */
+  .center-nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  .content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
+   }
